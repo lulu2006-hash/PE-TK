@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background: #2563eb;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar button {
+  background: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 10px;
+}
+
+.judul {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 6px;
+  text-align: center;
+}
+
+td[contenteditable] {
+  text-align: left;
+}
+
+select {
+  width: 60px;
+}
+
+.print-value {
+  display: none;
+  font-weight: bold;
+}
+
+.ttd {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+/* PRINT */
+@media print {
+  .no-print {
+    display: none;
+  }
+  select {
+    display: none;
+  }
+  .print-value {
+    display: inline;
+  }
+}

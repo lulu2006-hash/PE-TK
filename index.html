@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Penilaian TK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar no-print">
+  <button>Data</button>
+  <button>Input</button>
+  <button onclick="window.print()">Print</button>
+</nav>
+
+<!-- ====== 5 SISWA ====== -->
+<div id="siswa-wrapper">
+
+  <!-- TEMPLATE SISWA -->
+  <div class="siswa">
+    <h2 class="judul">LAPORAN PENILAIAN SISWA</h2>
+
+    <!-- IDENTITAS -->
+    <table class="identitas">
+      <tr><td>Nama</td><td><input></td><td>Kelas</td><td><input></td></tr>
+      <tr><td>NIS</td><td><input></td><td>NISN</td><td><input></td></tr>
+      <tr><td>Sekolah</td><td><input></td><td>Semester</td><td><input></td></tr>
+    </table>
+
+    <!-- TABEL NILAI -->
+    <table class="nilai">
+      <thead>
+        <tr>
+          <th>Kategori</th>
+          <th>Submateri</th>
+          <th>PE 1</th><th>Em</th>
+          <th>PE 2</th><th>Em</th>
+          <th>PE 3</th><th>Em</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- ROHANI -->
+        <tr>
+          <td rowspan="4">Rohani</td>
+          <td contenteditable>Doa</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Pujian</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Hafalan Ayat</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Sikap Ibadah</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+
+        <!-- MOTORIK -->
+        <tr>
+          <td rowspan="2">Motorik</td>
+          <td contenteditable>Motorik Kasar</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Motorik Halus</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+
+        <!-- BAHASA -->
+        <tr>
+          <td rowspan="2">Bahasa</td>
+          <td contenteditable>Mendengar</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Berbicara</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+
+        <!-- KARAKTER -->
+        <tr>
+          <td rowspan="2">Karakter</td>
+          <td contenteditable>Disiplin</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+        <tr>
+          <td contenteditable>Tanggung Jawab</td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+          <td class="nilai"></td><td class="emoji"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- TTD -->
+    <div class="ttd">
+      <div>Orang Tua<br><br>( ___________ )</div>
+      <div>Wali Kelas<br><br>( ___________ )</div>
+    </div>
+
+    <div class="page-break"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
